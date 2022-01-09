@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>bookmarker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri&family=Fuzzy+Bubbles:wght@700&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Start Form -->
+    <section class="bookmark-form">
+        <div class="container py-5 ">
+            <div class="form-head text-center mb-5">
+                <h1>Bookmarker</h1>
+                <p>Bookmark your favorite sites</p>
+            </div>
+            <div class="form-group ">
+                <label>Site Name <span>*</span></label>
+                <input id="bookmarkName" type="text" class="form-control" />
+
+                <div id="bookmarkNameAlert" class="alert alert-danger d-none">
+                    BookmarkName must start with capital letter, contains 4:10 characters
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Site URL <span>*</span></label>
+                <input id="bookmarkUrl" type="text" class="form-control " />
+                <div id="bookmarkUrlAlert" class="alert alert-danger d-none">
+                    Bookmark URL must start with: (www.), then any char and ends with (.com, .org or .net)
+                </div>
+            </div>
+
+            <div class="form-group text-center mt-5">
+                <p id="empty-input-alert" class="text-danger"></p>
+                <a href="#bookmark-card" class="text-decoration-none" id="bookmark-card-href">
+                    <button id="addBtn" class="btn btn btn-danger">Add Bookmark</button>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="down-arrow">
+                <a href="#to-down" class="text-decoration-none text-white">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- End Form -->
+
+    <!-- Start Table -->
+    <section class="display-table pt-5 pb-3" id="to-down">
+        <div class="container">
+            <div class="bookmark-container d-flex justify-content-center">
+                <div class="display-table-body w-50">
+                    <div class="form-group mt-3 mb-5">
+                        <input type="text" id="searchInput" class="form-control" placeholder="&#xf002; Search"
+                            style="font-family: FontAwesome" />
+                    </div>
+
+                    <div id="bookmarkCardContainer" >
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Table -->
+
+    <!--Start footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content text-center">
+                <hr>
+                <p> CopyRight &copy; 2020 Designed by hajar arafat</p>
+            </div>
+        </div>
+    </footer>
+    <!--End footer -->
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

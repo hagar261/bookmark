@@ -1,0 +1,150 @@
+
+body
+{
+    background-image: url(../images/bg-honeycomb.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+
+/* start bookmark form */
+
+.bookmark-form .form-head h1
+{
+    font-family: 'Pacifico',cursive;
+    font-size: 4rem;
+    color: #120059;
+}
+.bookmark-form .form-head p
+{
+    font-family: 'Pacifico',cursive;
+   letter-spacing: 1px;
+   color: #736d8d;
+}
+
+.bookmark-form .form-group
+{
+    width: 70%;
+    margin:auto;
+}
+.bookmark-form .form-group label
+{
+    color: #120059;
+   
+}
+.bookmark-form .form-group label span
+{
+    color: red;
+}
+
+.bookmark-form .form-group input 
+{
+    background-color: #c1c8cb9c;
+    color: #120059;
+}
+
+
+.down-arrow {
+    box-shadow: 0px 23px 93px 1px rgba(0, 0, 0, 0.75);
+    background-color: #aab7d8d4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    
+}
+
+.down-arrow i 
+{
+    color: #120059;
+}
+
+.display-table input
+{
+    background-color: #c1c8cb9c;
+    color: #120059;
+}
+
+.display-table input::placeholder
+{
+    font-family: FontAwesome;
+    font-weight: normal;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+    color: #120059;
+}
+.display-table input:focus,.bookmark-form .form-group input:focus
+{
+    box-shadow: none;
+ 
+    color: #120059;
+    font-size: 1rem;
+    background-color: #c1c8cb9c;
+}
+/* end bookmark form */
+
+/* Start Display Table */
+
+.bookmark-card {
+    margin: 2rem 0;
+    padding: 10px;
+    border-radius: 0.3rem;
+    border: 0.1px solid #ced4da;
+    transition: all 0.5s;
+    background-color: #d6dadc;
+    color: black;
+}
+
+
+
+/* .bookmark-car .card-btn
+{
+    margin-left:auto;
+} */
+.card-btn 
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.bookmark-card a,a:hover
+{
+    color: #fff;
+}
+
+.visit-btn
+{
+    background-color:#086E7D !important;
+}
+.edit-btn
+{
+    background-color:#F3950D;
+}
+.delete-btn,.delete-btn:hover
+{
+    background-color:#dc3545;
+    color: #fff;
+}
+
+
+
+
+
+/* End Display Table */
+
+
+/* Start Footer */
+footer .footer-content p {
+    font-size: 17px;
+    color: #120059;
+}
+/* End Footer */
